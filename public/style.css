@@ -1,0 +1,79 @@
+body {
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+}
+
+#header {
+	padding: 16px 8px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 20px;
+}
+
+#root {
+	margin: -19px 0 0 0;
+	padding: 16px 8px 2rem 8px;
+	vertical-align: center;
+	text-align: center;
+	z-index: 1;
+}
+
+#root div div table {
+	text-align: center;
+	margin: 0 auto 1rem auto;
+	vertical-align: middle;
+}
+
+#root div div table tr td {
+	padding: 2px 1rem;
+}
+
+#root div div table tr th {
+	padding: 2px 1rem;
+}
+
+#footer {
+	padding: 16px 8px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 20px;
+}
+
+#root div {
+	margin: 0 auto;
+}
+
+div[role='treegrid'] {
+	width: 600px;
+}
+
+.EachH {
+	padding-top: 0 !important;
+}
+
+#textcolor span {
+	color: black;
+}
+
+#primary {
+	font-size: 1.8em;
+}
+
+#secondary {
+	font-size: 0.8em;
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-blend-mode: overlay;
+	margin-top: 20rem;
+}
+
+.pic img{
+	position: fixed;
+	top:0;
+	z-index: -1;
+}
