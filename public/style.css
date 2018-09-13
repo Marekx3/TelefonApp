@@ -67,13 +67,58 @@ div[role='treegrid'] {
 #container {
 	width: 1000px;
 	margin: 0 auto;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.1);
 	background-blend-mode: overlay;
-	margin-top: 20rem;
+	margin-top: 10rem;
+	backdrop-filter: blur(48px);
 }
 
-.pic img{
-	position: fixed;
-	top:0;
-	z-index: -1;
+/* Background */
+
+
+.green{
+	background-color: #00ff36;
 }
+
+.green img{
+	filter: grayscale(100%) contrast(1);
+	mix-blend-mode: multiply;
+	width: 100%;
+}
+
+.column::after{
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all ease-in-out .5s;
+}
+
+.green::after{
+	background-color: #23278a;
+	mix-blend-mode: lighten;
+}
+
+.pos {
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.purple{
+	background-color: #88169d;
+ }
+ .purple img{
+	-webkit-filter: grayscale(100%) contrast(1.2);
+	filter: grayscale(100%) contrast(1.2);
+	mix-blend-mode: lighten;
+ }
+ .purple::after{
+	mix-blend-mode: hard-light;
+	background: linear-gradient(to top left, #75d775, #321a5b);
+ }
